@@ -1,0 +1,62 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+
+    <link rel="stylesheet" href="./Styles/main.css" />
+  </head>
+
+  <body>
+    <div class="todo-app">
+      <div class="greeting">
+        <h2 class="title">
+          Salut <input type="text" id="name" placeholder="Prénom ici" />
+        </h2>
+      </div>
+
+      <div class="create-todo">
+        <h3>AJOUT D'UNE NOUVELLE TÂCHE</h3>
+
+        <form id="new-todo-form">
+          <h4>Que dois-tu faire?</h4>
+          <input type="text" name="content" id="content" />
+
+          <h4>Choisis une catégorie</h4>
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category"
+                value="business"
+              />
+              <span class="bubble business"></span>
+              <p class="bubble-title">Professionnelle</p>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category"
+                value="personal"
+              />
+              <span class="bubble personal"></span>
+              <p class="bubble-title">Personnelle</p>
+            </label>
+          </div>
+
+          <input type="submit" value="Ajouter" id="submit" />
+        </form>
+      </div>
+
+      <div class="todo-list">
+        <h3>LISTE DES TÂCHES</h3>
+        <div class="list" id="todo-list"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
